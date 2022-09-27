@@ -1,3 +1,7 @@
 nox
 numpy
 matplotlib
+mne==0.20.3
+resampy
+pandas
+h5py

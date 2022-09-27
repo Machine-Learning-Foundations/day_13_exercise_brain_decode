@@ -25,7 +25,7 @@ def lint(session):
         "darglint",
     )
     session.install("flake8-bandit==2.1.2", "bandit==1.7.2")
-    session.run("flake8", "src", "tests", "noxfile.py")
+    session.run("flake8", "src/train_brain_decoder.py", "tests", "noxfile.py")
 
 
 @nox.session(name="typing")
@@ -42,7 +42,7 @@ def mypy(session):
         "--no-warn-return-any",
         "--implicit-reexport",
         "--allow-untyped-calls",
-        "src",
+        "src/train_brain_decoder.py",
     )
 
 
