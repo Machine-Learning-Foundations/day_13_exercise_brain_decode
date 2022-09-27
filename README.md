@@ -42,6 +42,6 @@ Preprocessing code from the paper-authors is already ready for in `src/util.py` 
 
 ```
 
-Use as much of your code from the last two days as possible. You can re-use your image-processing code by treating the EEG signals as images with single rows and 44 "color"-channels.
+Use as much of your code from the last two days as possible. You can re-use your image-processing code by treating the EEG signals as images with single rows and 44 "color"-channels. Implement your solution in `src/train_brain_decoder.py`.
 
 
