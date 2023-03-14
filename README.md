@@ -4,8 +4,8 @@ The data-set was recorded at the University of Freiburg and appeared in [Deep le
 The authors describe it as follows:
 
 "Our “High-Gamma Dataset” is a 128-electrode dataset (of which we later only use 44 sensors covering the
-motor cortex, (see Section 2.7.1), obtained from 14 healthy subjects (6 female, 2 left-handed, age 27.2±3.6
-(mean±std)) with roughly 1000 (963.1±150.9, mean±std) four-second trials of executed movements divided
+motor cortex, (see Section 2.7.1), obtained from 14 healthy subjects (6 female, 2 left-handed, age $27.2\pm3.6$
+(mean $\pm$ std)) with roughly 1000 ($963.1\pm150.9$, mean $\pm$ std) four-second trials of executed movements divided
 into 13 runs per subject. The four classes of movements were movements of either the left hand, the right
 hand, both feet, and rest (no movement, but same type of visual cue as for the other classes)."
 
@@ -25,7 +25,7 @@ Examine the data yourself.
 
 ## Your task:
 Train a CNN to recognize the four actions given only the EEG data.
-Preprocessing code from the paper-authors is already ready for in `src/util.py` to get started load the data via:
+Preprocessing code from the paper-authors is already ready for in `src/util.py`. To get started have a look at `src/train_brain_decoder.py` and load the data via:
 ```python
     from src.load_eeg import load_train_valid_test
     low_cut_hz = 0
@@ -42,6 +42,4 @@ Preprocessing code from the paper-authors is already ready for in `src/util.py` 
 
 ```
 
-Use as much of your code from the last two days as possible. You can re-use your image-processing code by treating the EEG signals as images with single rows and 44 "color"-channels. Implement your solution in `src/train_brain_decoder.py`.
-
-
+Use as much of your code from the last two days as possible. You can re-use your image-processing code by treating the EEG signals as images with single rows and 44 "color"-channels. Implement your solution in `src/train_brain_decoder.py`. Follow the instructions precisely and make sure to implement everything marked with a `TODO`.

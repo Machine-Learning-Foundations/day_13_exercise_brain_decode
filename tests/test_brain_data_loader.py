@@ -1,9 +1,11 @@
+"""Test functions in src/train_brain_decoder.py."""
 import os
 
 from src.load_eeg import load_train_valid_test
 
 
 def test_brain_load():
+    """Test dataloading."""
     low_cut_hz = 0
     subject_id = 1
 
