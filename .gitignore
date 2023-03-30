@@ -1,3 +1,4 @@
+*.mat
 .vscode/
 .pytest_cache/
 
