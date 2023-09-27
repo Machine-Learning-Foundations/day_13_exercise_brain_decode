@@ -1,5 +1,5 @@
 nox
-numpy
+numpy==1.23.0
 jax[cpu]
 flax
 matplotlib
